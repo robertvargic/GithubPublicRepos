@@ -1,6 +1,6 @@
 package com.robertvargic.cryptochecker.networking
 
-import com.example.githubpublicrepositories.data.response.Contributors
+import com.example.githubpublicrepositories.data.response.Contributor
 import com.example.githubpublicrepositories.data.response.Repository
 import retrofit2.Call
 import retrofit2.http.GET
@@ -25,6 +25,6 @@ interface ApiService {
     fun getRepositoryContributors(
         @Path("owner") owner: String,
         @Path("repo") repo: String
-    ): Call<MutableList<Contributors>>
+    ): Call<MutableList<Contributor>>
 
 }
